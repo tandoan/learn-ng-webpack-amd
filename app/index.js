@@ -2,9 +2,10 @@
 
 require(
     [
-        './app'        
+        './app',
+        './app.routes'       
     ],
-    function (myapp) {
+    function (myapp,appRoutes) {
          return myapp;
     }
 

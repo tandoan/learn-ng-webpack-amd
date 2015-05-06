@@ -3,26 +3,16 @@
 define(
     [
         'angular',
-        'angular-route',
-        './components/landingPage/landingPage.js',
-        './components/landingPage/landingPage.html'     
+        'angular-route'
     ],
 
-    function(angular,ngRoute,landingPageController,landingPageHTML){
+    function(angular,ngRoute){
 
         var appName = 'tansapp',
             appModule = angular
                 .module(appName, ['ngRoute'])
-                .controller('landingPageController', landingPageController)
-                .config(function($routeProvider){
-                    $routeProvider.when('/landingPage', {
-                        template: landingPageHTML,
-                        controller: landingPageController
-                    });
-                    /* Add New Routes Above */
-                    $routeProvider.otherwise({redirectTo: '/landingPage'});
-                })
-
+                .controller('landingPageController', require('./components/landingPage/landingPage.js' ));
+                
 
         angular.element(document).ready(function () {
             angular.bootstrap(document, [appName], {
