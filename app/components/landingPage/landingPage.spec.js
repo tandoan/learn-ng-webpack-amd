@@ -1,7 +1,3 @@
-require('./../../app.js');
-require('angular');
-require('angular-mocks');
-
 describe('Controller: landingPage', function () {
 
     var ctrl, scope;
@@ -16,6 +12,6 @@ describe('Controller: landingPage', function () {
 
     it('should have the right length', function () {
         expect(scope.allTheThings.length).toBe(4);
-    })
+    });
 });
 	

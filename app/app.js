@@ -14,7 +14,8 @@ define(
             appModule = angular
 
                 .module(appName, ['ngRoute', 'nfGraphics'])
-                .controller('landingPageController', require('./components/landingPage/landingPage.js'));
+                .controller('landingPageController', require('./components/landingPage/landingPage.js'))
+                .controller('otherPageController', require('./components/otherPage/otherPage.js'));
 
 
         angular.element(document).ready(function () {

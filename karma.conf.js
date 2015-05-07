@@ -31,7 +31,8 @@ module.exports = function (config) {
             {pattern: 'node_modules/angular-mocks/angular-mocks.js', included: false},
             {pattern: 'node_modules/angular-route/angular-route.js', included: false},
             {pattern: 'app/index.js', included: true},
-            'app/components/**/*spec.js'
+            {pattern: 'app/tests.js', included: true},
+            'app/components/**/*.spec.js'
         ],
 
 
@@ -44,6 +45,7 @@ module.exports = function (config) {
         preprocessors: {
             'app/components/**/*.html': ['webpack', 'ng-html2js'],
             'app/index.js': ['webpack'],
+            'app/tests.js': ['webpack'],
             'app/components/**/*.js': ['webpack']
         },
 
