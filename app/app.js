@@ -5,7 +5,7 @@ define(
     [
         'angular',
         'angular-route',
-        './shared'
+        './shared/index'
     ],
 
     function (angular, ngRoute, appRoutes) {

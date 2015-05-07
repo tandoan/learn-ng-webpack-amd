@@ -113,8 +113,20 @@
   "predef"        : [         // Extra globals.
                               // main global
                               "angular",
+                              "console",
+
+                              // webpack
+                              "require",
+                              "define",
+
+                              // jasmine
                               "describe",
-                              "console"
+                              "beforeEach",
+                              "inject",
+                              "it",
+                              "expect",
+                              "fit",
+                              "fdescribe"
 
   ],
   "indent"        : 4         // Specify indentation spacing
