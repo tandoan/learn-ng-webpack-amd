@@ -25,3 +25,4 @@ test-results.xml
 *.log
 *results.xml
 app/bundle.js
+*.bundle.js
