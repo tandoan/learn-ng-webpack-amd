@@ -1,5 +1,5 @@
 .nf-spinner {
-    display:inline-block;
+    display: inline-block;
     background: url('/assets/images/spinner.png') transparent no-repeat 0 0;
     width: 75px;
     height: 75px;
@@ -26,39 +26,53 @@
 
     position: absolute;
     left: -250px;
-    right:0;
+    right: 0;
 
     margin: 150px auto 0 auto;
 }
 
 @-moz-keyframes spin {
-    from { -moz-transform: rotate(0deg); }
-    to { -moz-transform: rotate(360deg); }
+    from {
+        -moz-transform: rotate(0deg);
+    }
+    to {
+        -moz-transform: rotate(360deg);
+    }
 }
+
 @-webkit-keyframes spin {
-    from { -webkit-transform: rotate(0deg); }
-    to { -webkit-transform: rotate(360deg); }
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(360deg);
+    }
 }
+
 @keyframes spin {
-    from {transform:rotate(0deg);}
-    to {transform:rotate(360deg);}
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
 
 .nf-spinner.x-small {
-    width:15px;
-    height:15px;
+    width: 15px;
+    height: 15px;
     background-size: 15px 15px;
 }
 
 .nf-spinner.small {
-    width:35px;
-    height:35px;
+    width: 35px;
+    height: 35px;
     background-size: 35px 35px;
 }
 
 .nf-spinner.medium {
-    width:75px;
-    height:75px;
+    width: 75px;
+    height: 75px;
     background-size: 75px 75px;
 }
 
@@ -67,7 +81,7 @@
 }
 
 .spinner-container {
-    position:relative;
+    position: relative;
 }
 
 .spinner-container .center-spinner {
