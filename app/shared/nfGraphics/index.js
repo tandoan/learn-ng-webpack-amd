@@ -1,13 +1,13 @@
-define (['angular','./spinner.css'], function(angular){
+define(['angular', './spinner.css'], function (angular) {
 
-	angular.module('nfGraphics',[])
-	.directive('spinner', function(){
-		return {
-        template: require('./spinner.html'),
-        scope: {
-            size: '@'
-        },
-        restrict: 'E'
-    }
-	})
+    angular.module('nfGraphics', [])
+        .directive('spinner', function () {
+            return {
+                template: require('./spinner.html'),
+                scope: {
+                    size: '@'
+                },
+                restrict: 'E'
+            }
+        })
 });

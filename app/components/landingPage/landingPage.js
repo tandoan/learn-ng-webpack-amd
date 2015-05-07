@@ -1,8 +1,8 @@
 'use strict';
 
 define(
-    function(){
-        return  function($scope){
+    function () {
+        return function ($scope) {
             $scope.allTheThings = [
                 'dogs',
                 'cats',
@@ -10,5 +10,5 @@ define(
                 'double excited'
             ];
             console.log($scope.allTheThings, 'all the things!')
-        };   
-});
+        };
+    });
