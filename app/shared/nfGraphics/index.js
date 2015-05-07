@@ -8,6 +8,6 @@ define(['angular', './spinner.css'], function (angular) {
                     size: '@'
                 },
                 restrict: 'E'
-            }
-        })
+            };
+        });
 });

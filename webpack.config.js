@@ -31,6 +31,21 @@ module.exports = {
                 test: /\.scss$/,
                 loader: 'style!css!sass'
             }
-        ]
+        ],
+        postLoaders: [
+            {
+                test: /\.js$/,
+                exclude: /node_modules/, // do not lint third-party code
+                loader: 'jshint-loader'
+            }
+        ],
+        jshint: {
+            // Display JSHint messages as webpack errors
+            emitErrors: true,
+
+            // fail the build on JSHInt errors
+            failOnHint: false
+        }
+
     }
-}
+};

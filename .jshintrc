@@ -113,7 +113,8 @@
   "predef"        : [         // Extra globals.
                               // main global
                               "angular",
-                              "describe"
+                              "describe",
+                              "console"
 
   ],
   "indent"        : 4         // Specify indentation spacing

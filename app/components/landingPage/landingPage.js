@@ -9,6 +9,6 @@ define(
                 'excited',
                 'double excited'
             ];
-            console.log($scope.allTheThings, 'all the things!')
+            console.log($scope.allTheThings, 'all the things!');
         };
     });
