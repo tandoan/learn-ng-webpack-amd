@@ -3,14 +3,15 @@
 define(
     [
         'angular',
-        'angular-route'
+        'angular-route',
+        './shared'    
     ],
 
     function(angular,ngRoute,appRoutes){
 
         var appName = 'tansapp',
             appModule = angular
-                .module(appName, ['ngRoute'])
+                .module(appName, ['ngRoute', 'nfGraphics'])
                 .controller('landingPageController', require('./components/landingPage/landingPage.js' ));
                 
 
