@@ -13,6 +13,7 @@ define(
             appModule = angular
                 .module(appName, ['ngRoute', 'nfGraphics'])
                 .controller('landingPageController', require('./components/landingPage/landingPage.js' ));
+
                 
 
         angular.element(document).ready(function () {
