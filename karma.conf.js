@@ -26,11 +26,11 @@ module.exports = function(config) {
 
     // list of files / patterns to load in the browser
     files: [
-
+        {pattern: 'node_modules/phantomjs-polyfill/bind-polyfill.js', included: true},
         {pattern: 'node_modules/angular/angular.js', included: false},
-         {pattern:    'node_modules/angular-mocks/angular-mocks.js', included: false},
-        {pattern:     'node_modules/angular-route/angular-route.js', included: false},
-        {pattern:'app/index.js', included: true},
+        {pattern: 'node_modules/angular-mocks/angular-mocks.js', included: false},
+        {pattern: 'node_modules/angular-route/angular-route.js', included: false},
+        {pattern: 'app/index.js', included: true},
       'app/components/**/*spec.js'
     ],
 
@@ -104,7 +104,7 @@ module.exports = function(config) {
 
     // start these browsers
     // available browser launchers: https://npmjs.org/browse/keyword/karma-launcher
-    browsers: ['Chrome'],
+    browsers: ['PhantomJS', 'Chrome'],
 
 
     // Continuous Integration mode
