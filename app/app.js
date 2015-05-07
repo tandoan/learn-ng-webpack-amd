@@ -6,7 +6,7 @@ define(
         'angular-route'
     ],
 
-    function(angular,ngRoute){
+    function(angular,ngRoute,appRoutes){
 
         var appName = 'tansapp',
             appModule = angular
