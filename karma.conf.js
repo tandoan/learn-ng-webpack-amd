@@ -67,7 +67,8 @@ module.exports = function(config) {
                 },
                 module: {
                     loaders: [
-                        { test: /\.html$/, loader: "html-loader" }
+                        { test: /\.html$/, loader: "html-loader" },
+                        { test: /\.css$/, loader: 'style-loader!css-loader' }
                     ]
                 }
             };
